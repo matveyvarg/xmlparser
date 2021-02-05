@@ -21,8 +21,8 @@ class DB(metaclass=Singleton):
         """
         Get settings from settings.py
         """
-        conn = sqlite3.connect(DB_HOST)
-        self.cursor = conn.cursor()
+        self.conn = sqlite3.connect(DB_HOST)
+        self.cursor = self.conn.cursor()
         self.fields = [
             ('filename', 'TEXT'),
             ('InstanceMetadataId', 'TEXT'),
@@ -67,26 +67,33 @@ class DB(metaclass=Singleton):
         """
         Save to db
         """
-        query = []
+        query = {}
 
         for field, field_type in self.fields:
-            query.append(info.pop(field))
-
-        self.cursor.execute("INSERT INTO info VALUES ({})".format(",".join("?" * len(self.fields))), query)
+            query[field] = info.pop(field, 'NULL')
+        keys = ",".join(query.keys())
+        values = ",".join(f":{key}" for key in query.keys())
+        print(query)
+        self.cursor.execute("INSERT INTO info ({}) VALUES ({});".format(keys, values), query)
 
         other_ids = info.get('OtherIdentifier')
         if other_ids:
             oth_ids_qurey = []
             for entry in other_ids:
                 oth_ids_qurey.append((entry['type'], entry['value'], self.cursor.lastrowid))
+        
+        self.conn.commit()
 
     def fetch(self, offset: int = 0, sort_by='id'):
         """
         Fetch data from db
         """
+        query = "SELECT * FROM info LEFT JOIN oth_id ON oth_id.info_id = info.id ORDER BY :sort_by ASC LIMIT :page_size OFFSET :offset ;"
+        print(query, {"page_size": PAGE_SIZE, "sort_by": sort_by, 'offset': offset})
         self.cursor.execute(
-            "SELECT * FROM info INNER JOIN oth_id ON oth_id.info_id = info.id ORDER BY :sort_by ASC LIMIT :page_size OFFSET :offset ;",
-         {"page_size": PAGE_SIZE, "sort_by": sort_by, 'offset': offset}
-         )
+            query,
+            {"page_size": PAGE_SIZE, "sort_by": sort_by, 'offset': offset}
+        )
 
         return self.cursor.fetchall()
+

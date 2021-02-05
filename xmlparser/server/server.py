@@ -18,10 +18,10 @@ def show_data(page):
     Show extracted data
     """
     sort_by = request.query.sort_by
-    offset = page-1 * PAGE_SIZE
+    offset = (page-1) * PAGE_SIZE
     result = db.fetch(offset, sort_by)
     print(result)
-    return result
+    return {'items': result}
 
 
 run(host='localhost', port=8080, debug=True)
