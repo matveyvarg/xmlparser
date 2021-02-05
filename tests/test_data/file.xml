@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<2020-11-16T14:21:29 - /opt/og/bin/adi_2_tva-2020.08.04T15:20:35 -p ADI-EP013002960029.xml -l en-GB -g>
+<TVAMain xmlns:xsd="http: 􏰅 􏰋.w3.org/2001/XMLSchema" xmlns:xsi="http: 􏰅 􏰋.w3.org/2001/XMLSchema-instance <ProgramDescription>
+<ProgramInformationTable>
+<ProgramInformation programId="crid: 􏰅og.libertyglobal.com/GN/EP013002960029" fragmentId="EST.EP0130029>
+<BasicDescription>
+<Title xml:lang="en-GB">Mad Men <Title>
+<Title xml:lang="en-GB" type="episodeTitle">Shoot <Title>
+<ShortTitle xml:lang="en-GB" length="24" type="secondary">Mad Men (s1): ep 09 (HD) <ShortTitle> <Synopsis length="long" xml:lang="en-GB">Don is courted by Jim Hobarth, head of a larger ad firm who <Synopsis length="medium" xml:lang="en-GB">Don is courted by Jim Hobarth, head of a larger ad firm wh <Synopsis length="short" xml:lang="en-GB">Betty is used by a rival ad agency to try to hire Don, Pegg <Genre href="urn:libertyglobal:metadata:cs:ContentCS:2014_1:9" type="main" />
+<Genre href="urn:libertyglobal:metadata:cs:OfflineViewingCS:2012:downloadPeriod" type="other">
+<Definition>2592000 <Definition>
+<Genre>
+<Genre href="urn:libertyglobal:metadata:cs:OfflineViewingCS:2012:ExpiryAfterPlay" type="other">
+<Definition>172800 <Definition>
+<Genre>
+<Genre href="urn:libertyglobal:metadata:cs:OfflineViewingCS:2012:MaxDownloadsPerAsset" type="other">
+<Definition>999 <Definition>
+<Genre> <ParentalGuidance>
+<ParentalRating xmlns="urn:tva:mpeg7:2008" href="urn:eventis:metadata:cs:AgeCS:2010:15" /> <ExplanatoryText xmlns="urn:tva:metadata:2010" xml:lang="en-GB">Contains some language, violence and <ParentalGuidance>
+<CreditsList>
+<CreditsItem role="urn:mpeg:mpeg7:cs:RoleCS:2010:ACTOR">
+<PersonName>
+<GivenName xmlns="urn:tva:mpeg7:2008">Jon Hamm <GivenName>
+<PersonName> <CreditsItem>
+<CreditsItem role="urn:mpeg:mpeg7:cs:RoleCS:2010:ACTOR"> <PersonName>
+<GivenName xmlns="urn:tva:mpeg7:2008">John Slattery <GivenName>
+<PersonName> <CreditsItem>
+<CreditsItem role="urn:mpeg:mpeg7:cs:RoleCS:2010:ACTOR"> <PersonName>
+<GivenName xmlns="urn:tva:mpeg7:2008">Rich Sommer <GivenName>
+<PersonName> <CreditsItem>
+<CreditsItem role="urn:mpeg:mpeg7:cs:RoleCS:2010:ACTOR"> <PersonName>
+<GivenName xmlns="urn:tva:mpeg7:2008">Bryan Batt <GivenName>
+<PersonName> <CreditsItem>
+<CreditsItem role="urn:mpeg:mpeg7:cs:RoleCS:2010:ACTOR"> <PersonName>
+<GivenName xmlns="urn:tva:mpeg7:2008">Vincent Kartheiser <GivenName>
+<PersonName> <CreditsItem>
+<CreditsItem role="urn:mpeg:mpeg7:cs:RoleCS:2010:DIRECTOR"> <PersonName>
+<GivenName xmlns="urn:tva:mpeg7:2008">Paul Feig <GivenName>
+<PersonName> <CreditsItem>
+<CreditsItem role="urn:eventis:metadata:cs:RoleCS:2010:STUDIO"> <OrganizationName>EST <OrganizationName>
+<CreditsItem>
+<CreditsItem role="urn:eventis:metadata:cs:RoleCS:2010:STUDIO-CODE"> <OrganizationName>EST <OrganizationName>
+<CreditsItem>
+<CreditsItem role="urn:eventis:metadata:cs:RoleCS:2010:CONTENT-PROVIDER"> <OrganizationName>EST <OrganizationName>
+<CreditsItem>
+<CreditsItem role="urn:eventis:metadata:cs:RoleCS:2010:CONTENT-PROVIDER-ID"> <OrganizationName>EST <OrganizationName>
+<CreditsItem>
+<CreditsItem role="urn:eventis:metadata:cs:RoleCS:2010:CONTENT-PROVIDER-ASSET-ID"> <OrganizationName>EP013002960029 <OrganizationName>
+<CreditsItem>
+<CreditsItem role="urn:eventis:metadata:cs:RoleCS:2010:CONTENT-DISPLAY-PROVIDER"> <OrganizationName>VM Store UK <OrganizationName>
+<CreditsItem>
+<CreditsList> <RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:ScreenGrab2" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:ScreenGrab3" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:HighResLandscapeShowcard" />
+
+<MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im <MediaLocator>
+<RelatedMaterial> <RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:BoxCover" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:TitleTreatment" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:HighResLandscape" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:ScreenGrab1" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:HighResLandscapeProductionStill" <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:HighResPortrait" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<ProductionDate> <TimePoint>2007 <TimePoint> <ProductionDate>
+<ProductionLocation>US <ProductionLocation> <Duration>PT00H45M37S <Duration> <BasicDescription>
+<OtherIdentifier organization="libertyglobal.com" type="Display_Provider" authority="adi2tva">VM Store <OtherIdentifier organization="libertyglobal.com" type="UI_Location" authority="adi2tva">Archive <Othe <OtherIdentifier organization="libertyglobal.com" type="UI_Location" authority="adi2tva">Drama <OtherI <OtherIdentifier organization="libertyglobal.com" type="UI_Location" authority="adi2tva">VSPP <OtherId <OtherIdentifier organization="Gracenote" type="TMSId" authority="Gracenote">EP013002960029 <OtherIden <OtherIdentifier organization="Gracenote" type="GN_Layer1_TMSId" authority="Gracenote">EP013002960029 <OtherIdentifier organization="Gracenote" type="GN_Layer1_RootId" authority="Gracenote">3365735 <Other <OtherIdentifier organization="Gracenote" type="GN_Layer2_RootId" authority="Gracenote">185595 <OtherI <OtherIdentifier organization="Gracenote" type="GN_Layer2_SeriesId" authority="Gracenote">185595 <Othe <OtherIdentifier organization="Gracenote" type="GN_Layer2_TMSId" authority="Gracenote">SH013002960000 <OtherIdentifier organization="Gracenote" type="ConnectorId" authority="Gracenote">SH013002960000 <Oth <OtherIdentifier organization="LibertyGlobal" type="MEPId" authority="LibertyGlobal">EP013002960029 <O <OtherIdentifier organization="libertyglobal.com" type="Folder_Location" authority="adi2tva">Archive < <OtherIdentifier organization="libertyglobal.com" type="Folder_Location" authority="adi2tva">Drama <Ot
+
+<OtherIdentifier organization="libertyglobal.com" type="Folder_Location" authority="adi2tva">VSPP <Oth <OtherIdentifier organization="libertyglobal.com" type="LGI:Unique_Title_Id" authority="adi2tva">crid: <OtherIdentifier organization="libertyglobal.com" type="Creator" authority="adi2tva">OG <OtherIdentifi <MemberOf xsi:type="MemberOfType" crid="crid: 􏰅og.libertyglobal.com/VOD/EST" />
+<MemberOf xsi:type="EpisodeOfType" crid="crid: 􏰅og.libertyglobal.com/GN/7892720" index="9" />
+<ProgramInformation> <ProgramInformationTable>
+<GroupInformationTable>
+<GroupInformation groupId="crid: 􏰅og.libertyglobal.com/VOD/EST">
+<GroupType xsi:type="ProgramGroupTypeType" value="otherCollection" /> <BasicDescription>
+<Title xml:lang="en-GB">EST <Title>
+<Genre href="urn:eventis:metadata:cs:GroupTypeCS:2010:nodeCatalogue" type="other" /> <BasicDescription>
+<MemberOf xsi:type="MemberOfType" crid="crid: 􏰅og.libertyglobal.com/VOD" />
+<GroupInformation>
+<GroupInformation groupId="crid: 􏰅og.libertyglobal.com/VOD">
+<GroupType xsi:type="ProgramGroupTypeType" value="otherCollection" /> <BasicDescription>
+<Title xml:lang="en-GB">VOD <Title>
+<Genre href="urn:eventis:metadata:cs:GroupTypeCS:2010:nodeCatalogue" type="other" /> <BasicDescription>
+<MemberOf xsi:type="MemberOfType" crid="crid: 􏰅schange.com/0956dade-d868-4fc3-8765-338b6c32a0dc" />
+<GroupInformation>
+<GroupInformation groupId="crid: 􏰅og.libertyglobal.com/TVOD-EP013002960029">
+<GroupType xsi:type="ProgramGroupTypeType" value="otherCollection" /> <BasicDescription>
+<Title xml:lang="en-GB">Shoot <Title>
+<Genre href="urn:eventis:metadata:cs:GroupTypeCS:2010:product" type="other" /> <ParentalGuidance>
+<ParentalRating xmlns="urn:tva:mpeg7:2008" href="urn:eventis:metadata:cs:AgeCS:2010:15" />
+<ParentalGuidance> <PurchaseList>
+<PurchaseItem start="2019-12-09T23:59:59Z" end="2050-12-31T23:59:59Z"> <Price currency="GBP">2.49 <Price>
+<Purchase>
+<PurchaseType href="urn:eventis:metadata:cs:PurchaseTypeCS:2010:opportunity.transactional"> <Name>Transactional offer <Name>
+<PurchaseType>
+<Purchase> <Purchase>
+<PurchaseType href="urn:eventis:metadata:cs:PurchaseTypeCS:2010:playForPeriod.indefinite" />
+<Purchase> <Purchase>
+<PurchaseType href="urn:eventis:metadata:cs:PurchaseTypeCS:2010:downloadMode.downloadOnly" />
+<Purchase> <PurchaseItem>
+<PurchaseList> <BasicDescription>
+<OtherIdentifier organization="eventis" type="SUBSCRIPTION_PACKAGE_ID" authority="eventis">TVOD </OtherIdentifier>
+<GroupInformation>
+<GroupInformation groupId="crid: 􏰅og.libertyglobal.com/GN/7892720" numOfItems="0">
+<GroupType xsi:type="ProgramGroupTypeType" value="series" /> <BasicDescription>
+<Title xml:lang="en-GB">Season 1 <Title>
+<Genre href="urn:eventis:metadata:cs:CustomGroup:2012:Serie" type="other" />
+<Genre href="urn:libertyglobal:metadata:cs:OfflineViewingCS:2012:downloadPeriod" type="other">
+<Definition>2592000 <Definition>
+<Genre>
+<Genre href="urn:libertyglobal:metadata:cs:OfflineViewingCS:2012:ExpiryAfterPlay" type="other">
+
+<Definition>172800 <Definition>
+<Genre>
+<Genre href="urn:libertyglobal:metadata:cs:OfflineViewingCS:2012:MaxDownloadsPerAsset" type="other">
+<Definition>999 <Definition>
+<Genre> <RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:HighResLandscape" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:HighResPortrait" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<ProductionDate> <TimePoint>2007 <TimePoint> <ProductionDate>
+<ProductionLocation>US <ProductionLocation>
+<BasicDescription>
+<MemberOf xsi:type="MemberOfType" crid="crid: 􏰅og.libertyglobal.com/GN/SH013002960000_show" index="1" <OtherIdentifier organization="libertyglobal.com" type="Creator" authority="adi2tva">OG <OtherIdentifi <OtherIdentifier organization="Gracenote" type="SeasonId" authority="Gracenote">7892720_SH013002960000 <OtherIdentifier organization="libertyglobal.com" type="EST" authority="adi2tva">True <OtherIdentifier <GroupInformation>
+<GroupInformation groupId="crid: 􏰅og.libertyglobal.com/GN/SH013002960000_show" numOfItems="7"> <GroupType xsi:type="ProgramGroupTypeType" value="show" />
+<BasicDescription>
+<Title xml:lang="en-GB">Mad Men <Title>
+<Synopsis length="short" xml:lang="en-GB">Top adman Don Draper works at one of New York's most presti <Genre href="urn:libertyglobal:metadata:cs:ContentCS:2014_1:9" type="main" />
+<Genre href="urn:eventis:metadata:cs:CustomGroup:2012:Serie" type="other" />
+<Genre href="urn:libertyglobal:metadata:cs:OfflineViewingCS:2012:downloadPeriod" type="other">
+<Definition>2592000 <Definition>
+<Genre>
+<Genre href="urn:libertyglobal:metadata:cs:OfflineViewingCS:2012:ExpiryAfterPlay" type="other">
+<Definition>172800 <Definition>
+<Genre>
+<Genre href="urn:libertyglobal:metadata:cs:OfflineViewingCS:2012:MaxDownloadsPerAsset" type="other">
+<Definition>999 <Definition>
+<Genre> <RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:HighResPortrait" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:HighResLandscape" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im
+<MediaLocator> <RelatedMaterial>
+<RelatedMaterial>
+<HowRelated href="urn:schange:metadata:cs:DynamicHowRelatedCS:2012:TitleTreatment" /> <MediaLocator>
+<MediaUri xmlns="urn:tva:mpeg7:2008">https: 􏰅staticqbr-gb-prod.prod.cdn.dmdsdp.com/image-service/Im <MediaLocator>
+
+<RelatedMaterial> <ProductionDate>
+<TimePoint>2007 <TimePoint>
+<ProductionDate>
+<ProductionLocation>US <ProductionLocation> <BasicDescription>
+<OtherIdentifier organization="libertyglobal.com" type="Creator" authority="adi2tva">OG <OtherIdentifi <OtherIdentifier organization="Gracenote" type="ConnectorId" authority="Gracenote">SH013002960000 <Oth <OtherIdentifier organization="Gracenote" type="TMSId" authority="Gracenote">SH013002960000 <OtherIden <OtherIdentifier organization="libertyglobal.com" type="EST" authority="adi2tva">True <OtherIdentifier <GroupInformation>
+<GroupInformationTable> <ProgramLocationTable>
+<OnDemandProgram fragmentExpirationDate="2050-12-31T23:59:59Z"> <Program crid="crid: 􏰅og.libertyglobal.com/GN/EP013002960029" /> <ProgramURL>456949933 <ProgramURL> <InstanceMetadataId>imi:EST_EP013002960029_M <InstanceMetadataId> <InstanceDescription>
+<Genre href="urn:eventis:metadata:cs:PropertyCS:2010:IsRemoteContent" type="other" /> <Genre href="urn:eventis:metadata:cs:PropertyCS:2010:profile" type="other">
+<Definition>PLATFORM_EST <Definition>
+<Genre> <PurchaseList>
+<PurchaseItem start="2019-12-09T23:59:59Z" end="2050-12-31T23:59:59Z"> <Price currency="GBP">2.49 <Price>
+<Purchase>
+<PurchaseType href="urn:eventis:metadata:cs:PurchaseTypeCS:2010:availabilityWindow" />
+<Purchase> <Purchase>
+<PurchaseType href="urn:eventis:metadata:cs:PurchaseTypeCS:2010:productCrid"> <Definition>crid: 􏰅og.libertyglobal.com/TVOD-EP013002960029 <Definition> <PurchaseType>
+<Purchase> <PurchaseItem>
+<PurchaseList> <AVAttributes>
+<FileSize>12345 <FileSize>
+<AVAttributes>
+<MemberOf xsi:type="MemberOfType" crid="crid: 􏰅og.libertyglobal.com/TVOD-EP013002960029" /> <OtherIdentifier organization="libertyglobal.com" type="DrmId" authority="adi2tva">Fake_DrmId_EST <Ot <OtherIdentifier organization="eventis" type="EST:video_url" authority="adi2tva">https: 􏰅content.dtv. <OtherIdentifier organization="eventis" type="EST:video_id" authority="adi2tva">456949933 <OtherIdent <OtherIdentifier organization="eventis" type="EST:video_host" authority="adi2tva">105876 <OtherIdenti <OtherIdentifier organization="eventis" type="EST:video_providerUid" authority="adi2tva">VUBI00000000 <OtherIdentifier organization="libertyglobal.com" type="ParentalRating" authority="adi2tva">urn:event <OtherIdentifier organization="libertyglobal.com" type="ParentalRatingExplanatoryText" authority="adi <OtherIdentifier organization="libertyglobal.com" type="Created_At" authority="adi2tva">2020-11-16T14 <OtherIdentifier organization="libertyglobal.com" type="Provider" authority="adi2tva">EST <OtherIdent <OtherIdentifier organization="libertyglobal.com" type="Provider_ID" authority="adi2tva">EST <OtherId <OtherIdentifier organization="libertyglobal.com" type="P_Asset_ID" authority="adi2tva">EP01300296002 <OtherIdentifier organization="libertyglobal.com" type="AVAD_Asset_ID" authority="adi2tva">EP01300296 <OtherIdentifier organization="libertyglobal.com" type="M_Asset_ID" authority="adi2tva">EP01300296002 <OtherIdentifier organization="libertyglobal.com" type="Studio_Code" authority="adi2tva">EST <OtherId <OtherIdentifier organization="libertyglobal.com" type="Studio" authority="adi2tva">EST <OtherIdentif <OtherIdentifier organization="libertyglobal.com" type="Display_Provider" authority="adi2tva">VM Stor <OtherIdentifier organization="LibertyGlobal" type="MEPId" authority="LibertyGlobal">EP013002960029 < <OtherIdentifier organization="eventis" type="BillingID" authority="eventis">3365735 <OtherIdentifier <OtherIdentifier organization="libertyglobal.com" type="Checksum" authority="adi2tva" encoding="text" <InstanceDescription>
+<PublishedDuration>PT00H45M37S <PublishedDuration>
+
+<StartOfAvailability>2019-12-09T23:59:59Z <StartOfAvailability> <EndOfAvailability>2050-12-31T23:59:59Z <EndOfAvailability> <OnDemandProgram>
+<ProgramLocationTable> <ProgramReviewTable /> <ProgramDescription>
+<TVAMain>
