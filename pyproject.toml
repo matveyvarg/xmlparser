@@ -9,6 +9,8 @@ python = "^3.8"
 bottle = "^0.12.19"
 bottle-sqlite = "^0.2.0"
 dramatiq = "^1.10.0"
+APScheduler = "^3.7.0"
+pika = "^1.2.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.2"

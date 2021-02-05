@@ -72,7 +72,7 @@ class DB(metaclass=Singleton):
         for field, field_type in self.fields:
             value = info.pop(field, None)
             if value and not isinstance(value, str):
-                if len(value) == 1:
+                if len(value) == 1 and not isinstance(value, dict):
                     value = str(value[0])
                 else:
                     value = str(value)
@@ -82,8 +82,8 @@ class DB(metaclass=Singleton):
         self.cursor.execute("INSERT INTO info ({}) VALUES ({});".format(keys, values), query)
 
         other_ids = info.get('OtherIdentifier')
-        last_id = self.cursor.lastrowid
-    
+        lastrowid = self.cursor.lastrowid
+
         if other_ids:
             keys = ['type', 'value', 'info_id']
             for entry in other_ids:
@@ -95,7 +95,6 @@ class DB(metaclass=Singleton):
                         else:
                             value = str(value)
                     entry[key] = value
-
 
             value_keys = ",".join([f":{key}" for key in keys])
 
