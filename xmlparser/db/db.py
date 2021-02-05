@@ -70,18 +70,60 @@ class DB(metaclass=Singleton):
         query = {}
 
         for field, field_type in self.fields:
-            query[field] = info.pop(field, 'NULL')
+            value = info.pop(field, None)
+            if value and not isinstance(value, str):
+                if len(value) == 1:
+                    value = str(value[0])
+                else:
+                    value = str(value)
+            query[field] = value
         keys = ",".join(query.keys())
         values = ",".join(f":{key}" for key in query.keys())
-        print(query)
         self.cursor.execute("INSERT INTO info ({}) VALUES ({});".format(keys, values), query)
 
         other_ids = info.get('OtherIdentifier')
+        last_id = self.cursor.lastrowid
+    
         if other_ids:
-            oth_ids_qurey = []
+            keys = ['type', 'value', 'info_id']
             for entry in other_ids:
-                oth_ids_qurey.append((entry['type'], entry['value'], self.cursor.lastrowid))
-        
+                for key in keys:
+                    value = entry.setdefault(key)
+                    if value and not isinstance(value, str):
+                        if len(value) == 1:
+                            value = str(value[0])
+                        else:
+                            value = str(value)
+                    entry[key] = value
+
+
+            value_keys = ",".join([f":{key}" for key in keys])
+
+            self.cursor.executemany(
+                f'INSERT INTO oth_id ({",".join(keys)}) VALUES ({value_keys});',
+                [dict(**entry, info=lastrowid) for entry in other_ids]
+            )
+
+        genres = info.get('Geners')
+        if genres:
+            keys = ['type, href, defenition, info_id']
+            for entry in genres:
+                for key in keys:
+                    value = entry.setdefault(key)
+                    if value and not isinstance(value, str):
+                        if len(value) == 1:
+                            value = str(value[0])
+                        else:
+                            value = str(value)
+                    entry[key] = value
+
+            value_keys = ",".join([f":{key}" for key in keys])
+
+            self.cursor.executemany(
+                f'INSERT INTO geners ({",".join(keys)}) VALUES ({value_keys});',
+                [dict(**entry, info=lastrowid) for entry in genres]
+            )
+
         self.conn.commit()
 
     def fetch(self, offset: int = 0, sort_by='id'):

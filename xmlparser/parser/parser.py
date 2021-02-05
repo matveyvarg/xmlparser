@@ -28,7 +28,7 @@ class XMLParser(IBaseParser):
         self.result = dict()
 
     def get_attrs(self, node, attrs) -> dict:
-        return {k: node.attrib['k'] for k in attrs if k in node.attrib.keys()}
+        return {k: node.attrib[k] for k in attrs if k in node.attrib.keys()}
 
 
     def checkNode(self, node: Element):
@@ -36,25 +36,28 @@ class XMLParser(IBaseParser):
         Check if it's the node we are looking for
         """
         for field in self.fields_to_find:  # [(name, (attrs), (children, (attrs)))]
-            if node.tag[node.tag.index('}')+1:] == field[0]:
+            tag = node.tag[node.tag.index('}')+1:]
+            if tag == field[0]:
+                current = self.result.get(tag)  # If we've found such tag already
+                print(field)
                 if len(field) > 1 and is_tuple_or_list(field[1]):  # if attrs were setted
-                    current = self.result.get(node.tag)  # If we've found such tag already
                     # Find info in childers
                     child_info = {}
                     for children, child_attrs in field[2:]:
                         child_node = node.find(children)
                         child_info[children] = child_node.text
                         child_info.update(self.get_attrs(child_node, child_attrs))
+                    print(field[1])
                     if current:
                         current.append(dict(**self.get_attrs(node, field[1]), **child_info))
                     else:
-                        self.result[node.tag] = [self.get_attrs(node, field[1])]
+                        self.result[tag] = [self.get_attrs(node, field[1])]
+
                 else:  # if attrs were not setted
-                    current = self.result.get(node.tag)
                     if current:
                         current.append(node.text)
                     else:
-                        self.result[node.tag] = [node.text]
+                        self.result[tag] = [node.text]
 
     def parse_file(self, path: Union[str, Path]) -> dict:
         """
