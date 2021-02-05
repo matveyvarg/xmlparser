@@ -30,7 +30,6 @@ class DB(metaclass=Singleton):
             ('EndOfAvailability', 'TEXT'),
             ('Title', 'TEXT'),
             ('EpisodeTitle', 'TEXT'),
-            ('Genres', 'TEXT')
         ]
         # Create table for keeping info
         self.cursor.execute('''
@@ -64,18 +63,18 @@ class DB(metaclass=Singleton):
         );
         ''')
 
-    def save(self, info: dict, other_ids: Iterable = None):
+    def save(self, info: dict):
         """
         Save to db
         """
         query = []
 
         for field, field_type in self.fields:
-            query.append(info[field])
-
+            query.append(info.pop(field))
 
         self.cursor.execute("INSERT INTO info VALUES ({})".format(",".join("?" * len(self.fields))), query)
 
+        other_ids = info.get('OtherIdentifier')
         if other_ids:
             oth_ids_qurey = []
             for entry in other_ids:
@@ -86,7 +85,8 @@ class DB(metaclass=Singleton):
         Fetch data from db
         """
         self.cursor.execute(
-            "SELECT * FROM info INNER JOIN oth_id ON oth_id.info_id = info.id LIMIT = :page_size ORDER BY :sort_by;",
-         {"page_size": PAGE_SIZE, "sort_by": sort_by})
+            "SELECT * FROM info INNER JOIN oth_id ON oth_id.info_id = info.id ORDER BY :sort_by ASC LIMIT :page_size OFFSET :offset ;",
+         {"page_size": PAGE_SIZE, "sort_by": sort_by, 'offset': offset}
+         )
 
         return self.cursor.fetchall()

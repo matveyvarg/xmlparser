@@ -31,11 +31,12 @@ class XMLParser(IBaseParser):
         """
         Check if it's the node we are looking for
         """
-        for field in self.fields_to_find:  # [(name, (attrs))]
+        for field in self.fields_to_find:  # [(name, (attrs), (children, (attrs)))]
             if node.tag == field[0]:
                 if len(field) > 1 and is_tuple_or_list(field[1]):  # if attrs were setted
                     current = self.result.get(node.tag)  # If we've found such tag already
-                    attrs = {k: node.attrib.get(k) for k in field[1]}
+                    attrs = {k: node.attrib['k'] for k in field[1] if k in node.attrib.keys()}
+                    # Find info in childers
                     if current:
                         current.append(attrs)
                     else:

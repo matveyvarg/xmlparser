@@ -10,6 +10,8 @@ from .parser import XMLParser
 
 db = DB()
 
+
+@dramatiq.actor
 def parse_files(path_to_files: Union[str, Path]):
     """
     Job for parsing files
@@ -19,12 +21,11 @@ def parse_files(path_to_files: Union[str, Path]):
     pathlist = Path(path_to_files).glob('**/*.xml')
 
     for path in pathlist:
-        result = parser.parse_file(path)
+        save_to_db(parser.parse_file(path))
 
 
 def save_to_db(data: dict):
     """
     Job for saving it into db
     """
-    
-    db.save()
+    db.save(data)
